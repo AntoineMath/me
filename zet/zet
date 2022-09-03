@@ -1,0 +1,14 @@
+#!/bin/bash
+
+TITLE=$@
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+FOLDER_NAME="$SCRIPTPATH/$(date -u +%y%m%d%H%m%S)"	
+
+mkdir $FOLDER_NAME
+
+#Template
+echo "# $TITLE
+
+
+## References" >> $FOLDER_NAME/README.md
