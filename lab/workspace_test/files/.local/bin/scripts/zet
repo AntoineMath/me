@@ -17,3 +17,5 @@ echo "# $TITLE
 # Open the file
 vim $README
 
+
+echo "Done"
